@@ -1,0 +1,17 @@
+{
+  "name": "plateful",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Track your diet and learn to balance it. React + Express.",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n api,web -c green,magenta \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "test": "npm --prefix server test",
+    "build": "npm --prefix client run build",
+    "start": "cross-env NODE_ENV=production npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "9.1.0",
+    "cross-env": "7.0.3"
+  }
+}

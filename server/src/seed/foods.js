@@ -1,0 +1,52 @@
+// Typical values per portion. They are averages and vary by recipe and brand.
+// tags: b = breakfast, m = main meal, s = snack/drink
+// sv = food-group servings in one portion: veg, fruit, grains, protein, dairy
+export const FOODS = [
+  // Breakfast
+  { name: 'Oatmeal with milk and berries', unit: '1 bowl', kcal: 310, p: 12, c: 50, f: 7, fiber: 7, tags: 'b', sv: { grains: 1.5, fruit: 0.5, dairy: 0.5 } },
+  { name: 'Greek yogurt with honey', unit: '200 g', kcal: 190, p: 18, c: 20, f: 4, fiber: 0, tags: 'bs', sv: { dairy: 1 } },
+  { name: 'Two boiled eggs', unit: '2 eggs', kcal: 156, p: 13, c: 1, f: 11, fiber: 0, tags: 'b', sv: { protein: 1 } },
+  { name: 'Wholegrain toast with butter', unit: '2 slices', kcal: 230, p: 8, c: 28, f: 9, fiber: 4, tags: 'b', sv: { grains: 2 } },
+  { name: 'Rye bread with cheese', unit: '2 slices', kcal: 270, p: 13, c: 30, f: 11, fiber: 6, tags: 'bs', sv: { grains: 2, dairy: 0.5 } },
+  { name: 'Avocado toast with egg', unit: '1 plate', kcal: 360, p: 15, c: 30, f: 20, fiber: 8, tags: 'b', sv: { grains: 1, protein: 0.5, veg: 0.5 } },
+  { name: 'Cottage cheese with berries', unit: '200 g', kcal: 200, p: 24, c: 14, f: 5, fiber: 2, tags: 'bs', sv: { dairy: 1, fruit: 0.5 } },
+  { name: 'Buckwheat porridge', unit: '1 bowl', kcal: 250, p: 9, c: 45, f: 4, fiber: 5, tags: 'b', sv: { grains: 2 } },
+  { name: 'Paratha with omelette', unit: '1 plate', kcal: 520, p: 18, c: 45, f: 30, fiber: 3, tags: 'b', sv: { grains: 2, protein: 1 } },
+  { name: 'Banana protein smoothie', unit: '1 glass', kcal: 300, p: 27, c: 38, f: 5, fiber: 3, tags: 'bs', sv: { fruit: 1, dairy: 0.5 } },
+  // Mains
+  { name: 'Grilled chicken, rice and vegetables', unit: '1 plate', kcal: 560, p: 45, c: 60, f: 12, fiber: 5, tags: 'm', sv: { protein: 1.5, grains: 2, veg: 1.5 } },
+  { name: 'Baked salmon with potatoes and greens', unit: '1 plate', kcal: 620, p: 38, c: 45, f: 30, fiber: 6, tags: 'm', sv: { protein: 1.5, veg: 2 } },
+  { name: 'Chicken biryani', unit: '1 plate', kcal: 650, p: 30, c: 80, f: 22, fiber: 3, tags: 'm', sv: { grains: 3, protein: 1, veg: 0.5 } },
+  { name: 'Chicken karahi with roti', unit: '1 plate', kcal: 640, p: 38, c: 45, f: 34, fiber: 5, tags: 'm', sv: { protein: 1.5, grains: 2, veg: 1 } },
+  { name: 'Daal with rice', unit: '1 plate', kcal: 480, p: 20, c: 78, f: 9, fiber: 10, tags: 'm', sv: { protein: 1, grains: 2, veg: 0.5 } },
+  { name: 'Chana masala with roti', unit: '1 plate', kcal: 520, p: 19, c: 72, f: 16, fiber: 13, tags: 'm', sv: { protein: 1, grains: 2, veg: 1 } },
+  { name: 'Lentil soup with bread', unit: '1 bowl', kcal: 380, p: 19, c: 55, f: 8, fiber: 12, tags: 'm', sv: { protein: 1, grains: 1, veg: 1 } },
+  { name: 'Chicken Caesar salad', unit: '1 bowl', kcal: 440, p: 36, c: 16, f: 26, fiber: 4, tags: 'm', sv: { protein: 1.5, veg: 2 } },
+  { name: 'Quinoa bowl with chickpeas', unit: '1 bowl', kcal: 520, p: 20, c: 70, f: 16, fiber: 12, tags: 'm', sv: { grains: 2, protein: 1, veg: 1.5 } },
+  { name: 'Tofu and vegetable stir-fry', unit: '1 plate', kcal: 420, p: 24, c: 34, f: 20, fiber: 7, tags: 'm', sv: { protein: 1, veg: 2.5, grains: 0.5 } },
+  { name: 'Chicken ramen', unit: '1 bowl', kcal: 560, p: 28, c: 68, f: 18, fiber: 3, tags: 'm', sv: { grains: 2.5, protein: 1, veg: 0.5 } },
+  { name: 'Salmon sushi', unit: '8 pieces', kcal: 380, p: 18, c: 58, f: 8, fiber: 2, tags: 'm', sv: { grains: 2, protein: 1 } },
+  { name: 'Pasta bolognese', unit: '1 plate', kcal: 650, p: 32, c: 80, f: 20, fiber: 6, tags: 'm', sv: { grains: 3, protein: 1, veg: 1 } },
+  { name: 'Beef burger with fries', unit: '1 meal', kcal: 900, p: 35, c: 85, f: 46, fiber: 6, tags: 'm', sv: { grains: 2, protein: 1.5 } },
+  { name: 'Margherita pizza', unit: '2 slices', kcal: 540, p: 22, c: 66, f: 20, fiber: 4, tags: 'm', sv: { grains: 2.5, dairy: 1 } },
+  { name: 'Turkey and hummus wrap', unit: '1 wrap', kcal: 430, p: 28, c: 44, f: 15, fiber: 6, tags: 'm', sv: { grains: 1.5, protein: 1, veg: 1 } },
+  { name: 'Herring with potatoes and sour cream', unit: '1 plate', kcal: 520, p: 24, c: 40, f: 28, fiber: 4, tags: 'm', sv: { protein: 1, veg: 1, dairy: 0.5 } },
+  { name: 'Pork with sauerkraut and potatoes', unit: '1 plate', kcal: 620, p: 34, c: 42, f: 34, fiber: 7, tags: 'm', sv: { protein: 1.5, veg: 1.5 } },
+  { name: 'Big green salad with olive oil', unit: '1 bowl', kcal: 180, p: 4, c: 12, f: 14, fiber: 5, tags: 'ms', sv: { veg: 3 } },
+  { name: 'Roasted vegetables', unit: '1 bowl', kcal: 160, p: 4, c: 20, f: 8, fiber: 6, tags: 'ms', sv: { veg: 2.5 } },
+  // Snacks and drinks
+  { name: 'Apple', unit: '1 medium', kcal: 95, p: 0.5, c: 25, f: 0.3, fiber: 4.4, tags: 's', sv: { fruit: 1 } },
+  { name: 'Banana', unit: '1 medium', kcal: 105, p: 1.3, c: 27, f: 0.4, fiber: 3.1, tags: 's', sv: { fruit: 1 } },
+  { name: 'Orange', unit: '1 medium', kcal: 62, p: 1.2, c: 15, f: 0.2, fiber: 3.1, tags: 's', sv: { fruit: 1 } },
+  { name: 'Carrot and cucumber sticks', unit: '1 cup', kcal: 45, p: 1, c: 10, f: 0.2, fiber: 3, tags: 's', sv: { veg: 1 } },
+  { name: 'Almonds', unit: '30 g', kcal: 175, p: 6, c: 6, f: 15, fiber: 3.5, tags: 's', sv: { protein: 0.5 } },
+  { name: 'Hummus with carrots', unit: '1 small bowl', kcal: 180, p: 6, c: 16, f: 10, fiber: 5, tags: 's', sv: { protein: 0.5, veg: 0.5 } },
+  { name: 'Curd snack bar (kohuke)', unit: '1 bar', kcal: 160, p: 5, c: 15, f: 9, fiber: 0, tags: 's', sv: { dairy: 0.5 } },
+  { name: 'Kefir', unit: '1 glass', kcal: 120, p: 8, c: 10, f: 5, fiber: 0, tags: 's', sv: { dairy: 1 } },
+  { name: 'Dark chocolate', unit: '20 g', kcal: 115, p: 1.5, c: 9, f: 8, fiber: 2, tags: 's', sv: {} },
+  { name: 'Latte', unit: '1 medium', kcal: 190, p: 10, c: 18, f: 8, fiber: 0, tags: 's', sv: { dairy: 1 } },
+  { name: 'Protein shake', unit: '1 scoop + water', kcal: 120, p: 24, c: 3, f: 1.5, fiber: 0, tags: 's', sv: { protein: 1 } },
+  { name: 'Orange juice', unit: '1 glass', kcal: 110, p: 2, c: 26, f: 0.5, fiber: 0.5, tags: 's', sv: { fruit: 0.5 } },
+  { name: 'Soft drink', unit: '330 ml can', kcal: 140, p: 0, c: 35, f: 0, fiber: 0, tags: 's', sv: {} },
+  { name: 'Crisps', unit: '40 g bag', kcal: 215, p: 2.5, c: 21, f: 13, fiber: 1.5, tags: 's', sv: {} }
+];
